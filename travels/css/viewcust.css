@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color: powderblue;
+}
+nav{
+    background: #2f3542;
+    height: 80px;
+    width: 100%;
+}
+label.logo img{
+    margin-left: 20px;
+    border-radius: 50%;
+    min-height: auto;
+    max-height: 80px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+
+}
+nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+table {
+    margin: 0px;
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+tr:hover {background-color:#76D7C4;}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td button {
+    background-color: #000;
+    color: white;
+    font-weight: bold; 
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px solid #1976d2;
+    width:80px;
+   
+  }
+  td button a{
+    text-decoration: none;
+    color:white;
+  }
+  .home_navigator {
+  background-color: #000;
+  width: 10%;
+  color: white;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.home_navigator a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  padding:20px;
+}
